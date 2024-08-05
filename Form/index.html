@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Sign Up</title>
+</head>
+<body>
+    <div id="main-container">
+        <div id="left-content">
+            <img src="https://getlouied.github.io/odin-signup-form/images/miami.jpg" alt="miami" width="500px">
+        </div>
+        <div id="right-content">
+
+            <h1>Welcome to Miami</h1>
+            <p>Welcome to the neon-lit paradise of Miami Dreams!  
+                Dive into a world where vibrant sunsets meet endless 
+                possibilities. Our service might not be real, but your 
+                journey to discovering the coolest side of yourself 
+                starts here.</p>
+
+            <form action="/" method="get" id="miami-form">
+                
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" id="firstname">
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname" id="lastname">
+
+                <label for="email">Email:<span aria-label="required">*</span></label>
+                <input type="text" name="email" id="email" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone">
+
+                <label for="password">Password:<span aria-label="required">*</span></label>
+                <input type="password" name="password" id="password" pattern="(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{7,}" title="Must be at least 7 characters long, contain at least one uppercase letter, one number, and one special character." required>
+                <label for="cpassword">Confirm Password:<span aria-label="required">*</span></label>
+                <input type="password" name="cpassword" id="cpassword" required>
+                <span id="error" class="error"></span>
+
+                <div class="button-container">
+                    <button type="Submit">Create An Account</button>
+                </div>
+                
+            </form>
+            <p>Already have an account? <a class="login" href="#">Log In</a></p>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(https://raw.githubusercontent.com/GetLouied/odin-signup-form/main/images/retrobackground.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#main-container {
+    margin: 3rem auto 0 auto;
+    border-radius: 10px;
+    width: 860px;
+    padding: 20px;
+    box-shadow: 1px 1px 6px 0px rgba(206, 7, 189, 0.802);
+    opacity: 0.95;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+#left-content,
+#right-content {
+    margin: 10px;
+}
+
+#left-content > img {
+    border-radius: 10px;
+    border: 2px inset rgba(206, 7, 189, 0.302);
+}
+
+#right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-text: center;
+
+    margin-left: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+input {
+    width: 250px;
+    box-shadow: 1px 1px 6px 0px rgba(206, 7, 189, 0.302);
+}
+
+button {
+    width: 150px;
+    background-color: rgba(5,233,172,255);
+    margin-top: 15px;
+    padding: 5px 10px;
+    box-shadow: 1px 1px 6px 0px rgba(206, 7, 189, 0.302);
+    color: rgba(206, 7, 189, 0.902);
+}
+
+.button-container {
+    display: flex; 
+    justify-content: center;
+}
+
+.login {
+    color: rgba(206, 7, 189, 0.902);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+input:invalid {
+    border: 2px red solid;
+}
+
+input:focus {
+    background-color: rgba(206, 7, 189, 0.902);
+    color: rgba(5,233,172,255);
+    font-weight: bold;
+}
